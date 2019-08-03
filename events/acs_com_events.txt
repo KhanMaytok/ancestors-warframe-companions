@@ -1,0 +1,54 @@
+NAMESPACE = ACSCOM
+
+########################
+## TIAMAT EVENT CHAIN ##
+########################
+# ACS.00001 - Init event
+character_event = {
+	id = ACSCOM.00001
+	is_triggered_only = yes
+	hide_window = yes
+	ai = no
+
+	trigger = {
+		OR = {
+			multiplayer = no
+			AND = {
+				multiplayer = yes
+				is_multiplayer_host_character = yes
+			}
+		}
+	}
+
+	immediate = {		
+		narrative_event = { id = ACSCOM.00002 days = 14 }
+	}
+}
+
+# ACS.00002 - Tiamat event
+narrative_event = {
+	id = ACS.00002
+	title = ACS_00002_TITLE
+	desc = ACS_00002_DESC
+	is_triggered_only = yes    
+	ai = no
+	picture = GFX_evt_tiamat
+
+	trigger = {
+		NOT = { has_global_flag = comet_tiamat }
+	}
+
+	option = {
+		trigger = {
+			OR = {
+				multiplayer = no
+				AND = {
+					multiplayer = yes
+					is_multiplayer_host_character = yes
+				}
+			}
+		}
+		name = ACS_00001_OPT_A				
+		set_global_flag = ancestors_companions_installed
+	}
+}

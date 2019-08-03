@@ -1,0 +1,19 @@
+kubrow_huras = {
+	martial = 1
+	quality = 5
+	no = yes
+	flags = { pet ancestors }
+	stacking = no
+	picture = "GFX_acs_com_huras"
+	slot = pet
+}
+
+kubrow_sunika = {
+	martial = 1
+	quality = 5
+	no = yes
+	flags = { pet ancestors }
+	stacking = no
+	picture = "GFX_acs_com_sunika"
+	slot = pet
+}

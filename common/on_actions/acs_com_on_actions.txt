@@ -1,0 +1,53 @@
+on_startup = {
+	events = {
+		ACS.00001 # Comet
+		ACS.00042 # Ensure only one Vee
+		ACS.00043 # Ensure only one Khalga
+	}
+}
+
+on_society_bi_yearly_pulse = {
+	events = {		
+		ACS.00227 # Force join AI characters to societies
+	}
+}
+
+on_yearly_pulse = {
+	events = {		
+		ACS.00013 # Khalga traveling every year
+	}
+}
+
+on_adolescence_pulse = {
+	events = {
+		ACS.00023 # Vee is growing
+	}
+}
+
+on_death = {
+	events = {
+		ACS.00017 # Resurrect Khalga if He dies
+	}
+}
+
+on_birth = {
+	events = {
+		ACS.00029 # Dojutsu inheritance mechanics
+		ACS.00038 # Jail if mother or father are prisoners
+	}
+}
+
+on_adulthood = {
+	events = {
+		ACS.00020 # Ensure the correct portrait for Khalga
+	}
+}
+
+# A character has switched their society interest
+# Root = Character
+# From = Society
+on_character_switch_society_interest = {
+	events = {
+		ACS.00203 # Begin societies recruitment
+	}
+}

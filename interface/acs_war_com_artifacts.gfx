@@ -1,0 +1,24 @@
+spriteTypes =
+{
+	spriteType = {
+		name = "GFX_evt_tiamat"
+		texturefile = "gfx\\event_pictures\\tiamat.tga"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_acs_com_huras"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\acs_com_huras.tga"
+	}
+	spriteType = {
+		name = "GFX_acs_com_huras_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\acs_com_huras_small.tga"
+	}
+	spriteType = {
+		name = "GFX_acs_com_sunika"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\acs_com_sunika.tga"
+	}
+	spriteType = {
+		name = "GFX_acs_com_sunika_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\acs_com_sunika_small.tga"
+	}
+}

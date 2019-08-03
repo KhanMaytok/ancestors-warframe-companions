@@ -1,0 +1,6 @@
+*.txt linguist-language=Rust
+*.csv linguist-language=Erlang
+*.md linguist-language=Go
+*.dds linguist-language=Julia
+*.gfx linguist-language=Python
+*.gui linguist-language=Haskell
